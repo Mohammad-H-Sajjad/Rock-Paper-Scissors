@@ -37,3 +37,7 @@ def Gameloop():
   print (whowin(plyrguess,cguess))
   print("you picked: " + RockPaperScisor(plyrguess) + "\nthe computer picked: " + RockPaperScisor(cguess))
   playagain = input("Do you want to play again? y/n\n")
+  if (playagain.lower() == "y"):
+    Gameloop()
+
+Gameloop()
